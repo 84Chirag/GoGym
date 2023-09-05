@@ -6,9 +6,9 @@
 // }
 
 // let messagecontainer = document.getElementById("success-message");
-let message1 = () => {
-    setTimeout(() => {
-        let message = document.querySelector('#success-message')
-        message.classList.toggle = ('success-message')
-    }, 3000);
-}
+// let message1 = () => {
+//     setTimeout(() => {
+//         let message = document.querySelector('#success-message')
+//         message.classList.toggle = ('success-message')
+//     }, 3000);
+// }
