@@ -43,10 +43,18 @@
           <a class="nav-link" href="#contact">Contact Us</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      <!-- <div style="display: flex;">
+        <h6 style="padding: 5px; margin-left: 15px;"><a href="mailto:chiragvgour@gmail.com">chiragvgour@gmail.com</a></h6>
+        <h6 style="padding: 5px;"><a href="tel:7208183145">+91 720 8183 145</a></h6>
+      </div> -->
+      <div class="social-items">
+        <h6 style="padding: 5px; margin-left: 15px;"><a href="mailto:chiragvgour@gmail.com"
+            class="mail">chiragvgour@gmail.com</a></h6>
+        <h6 style="padding: 5px;"><a href="tel:7208183145" class="phoneno">+91 720 8183 145</a></h6>
+        <a href="#" type="_blank"><img src="../static/image/instagram.png" class="social-icon" alt="instagram"></a>
+        <a href="#" type="_blank"><img src="../static/image/facebook.png" class="social-icon" alt="facebook"></a>
+        <a href="#" type="_blank"><img src="../static/image/twitter.png" class="social-icon" alt="twitter"></a>
+      </div>
 
     </div>
   </nav>
@@ -70,7 +78,7 @@
   <div class="container">
     <h1 class="us">Why US</h1>
     <div class="why-us">
-      <div class="card"  style="width: 18rem;">
+      <div class="card" style="width: 18rem;">
         <img src="../static/image/cycle-logo.png" class="card-img" alt="modern-equipment">
         <div class="card-body">
           <h2>LATEST EQUIPMENT</h2>
@@ -153,6 +161,7 @@
     </div>
   </div>
   <div class="container" id="contact">
+    <h1 class="cont">CONTACT US</h1>
     <div class="contact-item mx-5">
       <div class="contact-form ml-5">
         <h1>MEMBERSHIP FORM</h1>
@@ -171,28 +180,22 @@
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
-            <input type="email" autocomplete="username" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" autocomplete="username" name="email" class="form-control" id="exampleInputEmail1"
+              aria-describedby="emailHelp">
           </div>
           <div class="form-group">
             <label for="exampleInputPassword1">Password</label>
-            <input type="password" autocomplete="current-password" name="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" autocomplete="current-password" name="password" class="form-control"
+              id="exampleInputPassword1">
           </div>
           <div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </div>
-          
+
         </form>
       </div>
-      <div class="contact-details">
-        <h1>CONTACT DETAILS</h1>
-        <div class="address mt-lg-5">
-          <h3>ADDRESS</h3>
-          <h5>Vashi, Navi-Mumbai, Maharashtra.</h5>
-        </div>
-        <div class="phone mt-4">
-          <h3>PHONE NO.</h3>
-          <h5>+91 0123456789</h5>
-        </div>
+      <div class="contact-details" id="map">
+        
       </div>
     </div>
   </div>
@@ -203,16 +206,18 @@
   <footer>
     <div class="footer">
       <div class="foot-text">
-        <p>© Copyright 2021 Go Gym. All Rights Reserved</p>
+        <p>© Copyright 2023 <a href="mailto:chiragvgour@gmail.com">Chirag Gour</a>. All Rights Reserved</p>
       </div>
-      <div class="social-items">
-        <a href="#" type="_blank"><img src="../static/image/instagram.png" class="social-icon" alt="instagram"></a>
-        <a href="#" type="_blank"><img src="../static/image/facebook.png" class="social-icon" alt="facebook"></a>
-        <a href="#" type="_blank"><img src="../static/image/twitter.png" class="social-icon" alt="twitter"></a>
-      </div>
+
     </div>
   </footer>
+
+  <!-- custom JS -->
   <script src="../static/js/script.js"></script>
+
+  <!-- for goggle map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR57A2ktG7KlOhu84paTRXMtVBN7lNQio&callback=initMap" async defer></script>
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

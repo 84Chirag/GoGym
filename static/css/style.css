@@ -9,20 +9,34 @@ body{
     color: white;
     background: black !important;
 }
+.mail{
+    color: white;
+}
+.mail:hover{
+    color: #007bff;
+    text-decoration: none;
+}
+.phoneno{
+    color: white;
+}
+.phoneno:hover{
+    text-decoration: none;
+    color: #007bff;
+}
 .logo{
     width: 40px;
     height: 40px;
     background: transparent;
     border-radius: 50px;
 }
-.success-message{
+/* .success-message{
     display: block;
     position: absolute;
     top: 30px;
 }
 #success-message{
     display: none;
-}
+} */
 .content{
     position: relative;
     margin-top: 25%;
@@ -50,14 +64,14 @@ body{
 .why-us{
     display: flex;
     position: relative;
-    background: rebeccapurple;
+    background: #007bff;
     border-radius: 50px !important;
     /* margin-top: 18%; */
 }
 .card{
     font-weight: bold;
     color: black;
-    background: rebeccapurple !important;
+    background: #007bff !important;
     margin: 1px 1px 1px 1px;
     border: none !important;
     border-radius: 50px !important;
@@ -133,11 +147,17 @@ input{
 .form-control:focus{
     box-shadow: none !important;
 }
+.cont{
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
 .contact-details{
     border-left: 1px solid white;
     color: white;
     margin-left: 50px;
-    padding-left: 50px;
+    width: 50%;
+    /* padding-left: 530px; */
 }
 .footer{
     display: flex;
