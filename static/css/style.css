@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background: url('../image/go-gym-bg.jpg')center center no-repeat; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    color: white;
+    background: black !important;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50px;
+}
+.success-message{
+    display: block;
+    position: absolute;
+    top: 30px;
+}
+#success-message{
+    display: none;
+}
+.content{
+    position: relative;
+    margin-top: 25%;
+    color: white;
+}
+.us{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20%;
+    margin-bottom: 3%;
+}
+.container h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 25%;
+    margin-bottom: 3%;
+    color: #f8931f;
+}
+.why-us{
+    display: flex;
+    position: relative;
+    background: rebeccapurple;
+    /* margin-top: 18%; */
+}
+.card{
+    font-weight: bold;
+    color: black;
+    background: rebeccapurple !important;
+}
+.card-img{
+    width: 100px !important;
+    height: 100px !important;
+    background: transparent;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-bottom: -10px;
+    /* border: 1px solid black; */
+    background: grey;
+    border-radius: 50px !important;
+    padding: 10px 15px 10px 15px;
+}
+.card-body{
+    margin-top: -45px !important;
+}
+.card-text{
+    text-align: justify;
+}
+.content-text{
+    color: white;
+    text-align: justify;
+}
+#sponsors{
+    color: white;
+    margin-top: 70px;
+}
+.spon-head{
+    text-align: center;
+}
+.sponsors{
+    display: flex;
+}
+.card{
+    border-radius: 50px !important;
+    margin: 1px 1px 1px 1px
+}
+.logo-img{
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    background: transparent;
+}
+#contact{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.contact-item{
+    display: flex;
+    border: 1px solid white;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    border-radius: 50px;
+}
+.contact-form{
+    color: white;
+}
+.contact-details{
+    border-left: 1px solid white;
+    color: white;
+    margin-left: 50px;
+    padding-left: 50px;
+}
+.footer{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.foot-text {
+    margin-left: 40%;
+    color: white;
+}
+.social-items{
+    display: flex;
+    margin-left: 30%;
+}
+.social-icon{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    padding: 3px;
+}
