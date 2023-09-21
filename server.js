@@ -9,14 +9,14 @@ app.use('/static', express.static(path.join(__dirname, './static')))
 app.use('/template', express.static(path.join(__dirname, './template')))
 
 mongoose.connect('mongodb://127.0.0.1:27017/go-gym');
-// console.log("connection confirm")
+console.log("connection confirm")
 
 let contactSchema = new mongoose.Schema({
   firstname: String,
   lastname: String,
   phone: Number,
   email: String,
-  password: String
+  // password: String
 })
 
 let contactform = mongoose.model('contact-form', contactSchema);
