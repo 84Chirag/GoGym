@@ -48,9 +48,9 @@
         <h6 style="padding: 5px;"><a href="tel:7208183145">+91 720 8183 145</a></h6>
       </div> -->
       <div class="social-items">
-        <h6 style="padding: 5px; margin-left: 15px;"><a href="mailto:chiragvgour@gmail.com"
+        <h6 style="padding: 5px; margin-left: 15px; display: none;"><a href="mailto:chiragvgour@gmail.com"
             class="mail">chiragvgour@gmail.com</a></h6>
-        <h6 style="padding: 5px;"><a href="tel:7208183145" class="phoneno">+91 720 8183 145</a></h6>
+        <h6 style="padding: 5px;display: none;"><a href="tel:7208183145" class="phoneno">+91 720 8183 145</a></h6>
         <a href="#" type="_blank"><img src="../static/image/instagram.png" class="social-icon" alt="instagram"></a>
         <a href="https://github.com/84Chirag" type="_blank"><img src="../static/image/github.png" class="social-icon" alt="github"></a>
         <a href="#" type="_blank"><img src="../static/image/twitter.png" class="social-icon" alt="twitter"></a>
@@ -58,7 +58,7 @@
 
     </div>
   </nav>
-  <img src="../static/image/go-gym-bg.jpg" alt="bg-img" style="height: 80vh; width: 99vw; position: absolute;">
+  <img src="../static/image/go-gym-bg.jpg" alt="bg-img" class="banner">
   <!-- <div class="success-message" id="success-message">
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
       <strong>Success!</strong> Data has been collected successfully.
@@ -115,10 +115,9 @@
       </div>
     </div>
   </div>
-  <div class="container" id="about" style="display: flex; margin-top: 100px;">
+  <div class="container" id="about">
     <div class="content-image my-5">
-      <img src="../static/image/about-img.jpg" alt="about-image"
-        style="height: 440px; width: 390px;border-radius: 10px;">
+      <img src="../static/image/about-img.jpg" alt="about-image" class="about-image">
     </div>
     <div class="content-text ml-3 mt-5">
       <h1>ABOUT US</h1>
@@ -138,23 +137,23 @@
   <div class="container" id="sponsors">
     <h1 class="spon-head">OUR SPONSORS</h1>
     <div class="sponsors">
-      <div class="card" style="width: 18rem;">
-        <a href="https://in.puma.com/in/en" type="_blank">
+      <div class="card sponsor-card" style="width: 18rem;">
+        <a href="https://in.puma.com/in/en" class="sponsorimg" target="_blank">
           <img src="../static/image/puma-logo.png" class="logo-img" alt="puma-logo">
         </a>
       </div>
-      <div class="card" style="width: 18rem;">
-        <a href="https://www.nike.com/in/" type="_blank">
+      <div class="card sponsor-card" style="width: 18rem;">
+        <a href="https://www.nike.com/in/" class="sponsorimg" target="_blank">
           <img src="../static/image/nike-logo.png" class="logo-img" alt="nike-logo">
         </a>
       </div>
-      <div class="card" style="width: 18rem;">
-        <a href="https://www.muscleblaze.com/" type="_blank">
+      <div class="card sponsor-card" style="width: 18rem;">
+        <a href="https://www.muscleblaze.com/" class="sponsorimg" target="_blank">
           <img src="../static/image/muscle-blaze-removebg-preview.png" class="logo-img" alt="muscle-blaze">
         </a>
       </div>
-      <div class="card" style="width: 18rem;">
-        <a href="https://dymatize.com/" target="_blank">
+      <div class="card sponsor-card" style="width: 18rem;">
+        <a href="https://dymatize.com/" class="sponsorimg" target="_blank">
           <img src="../static/image/dymatize-seek-removebg-preview.png" class="logo-img" alt="dymatize-seek">
         </a>
       </div>
@@ -162,38 +161,38 @@
   </div>
   <div class="container" id="contact">
     <h1 class="cont">CONTACT US</h1>
-    <div class="contact-item mx-5">
-      <div class="contact-form ml-5">
+    <div class="contact-item">
+      <div class="contact-form">
         <h1>MEMBERSHIP FORM</h1>
-        <form method="post" action="./index" class="form-grp">
-          <div class="form-group">
-            <label for="exampleInputEmail1">First Name</label>
-            <input type="text" name="firstname" class="form-control" id="firstname">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Last Name</label>
-            <input type="text" name="lastname" class="form-control" id="lastname">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Mobile No.</label>
-            <input type="tel" name="phone" class="form-control" id="phone">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" autocomplete="username" name="email" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
-          </div>
-          <!-- <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" autocomplete="current-password" name="password" class="form-control"
-              id="exampleInputPassword1">
-          </div> -->
-          <div>
+        <form method="post" action="http://127.0.0.1:3000/index" class="form-grp">
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" class="form-control" id="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" class="form-control" id="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Mobile No.</label>
+                <input type="tel" name="phone" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" autocomplete="username" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <!-- Password field example (if needed in the future):
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" autocomplete="new-password" name="password" class="form-control" id="exampleInputPassword1" required>
+            </div> -->
             <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-
         </form>
+        <div id="successMessage" style="display: none;" class="alert alert-success mt-3">
+          Form submitted successfully!
       </div>
+    </div>
       <div class="contact-details" id="map">
         
       </div>
@@ -208,12 +207,18 @@
       <div class="foot-text">
         <p>© Copyright 2023 <a href="mailto:chiragvgour@gmail.com">Chirag Gour</a>. All Rights Reserved</p>
       </div>
+      <div class="downup">
+        <button id="uparrow" onclick="scrollToTop()">
+          <i class="fa-solid fa-angle-up fa-lg" style="color: #ffffff;"></i>
+        </button>
+    </div>
 
     </div>
   </footer>
 
   <!-- custom JS -->
   <script src="../static/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/9e745f8013.js" crossorigin="anonymous"></script>
 
   <!-- for goggle map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR57A2ktG7KlOhu84paTRXMtVBN7lNQio&callback=initMap" async defer></script>
