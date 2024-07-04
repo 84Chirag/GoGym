@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-</head>
-<body>
+
     <h1>Welcome to GoGym</h1>
 
     <img src="./static/image/gogym.png" alt="GoGym Logo">
@@ -26,5 +23,4 @@
     </ul>
 
     <p>Join GoGym today and start your journey towards a healthier, fitter you!</p>
-</body>
-</html>
+
